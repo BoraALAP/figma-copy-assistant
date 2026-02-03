@@ -141,9 +141,26 @@
     }
     
     .no-selection {
-      color: #999;
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
+    }
+    
+    .no-selection-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    
+    .no-selection-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    
+    .no-selection-hint {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.5;
     }
     
     .result {
@@ -205,7 +222,14 @@
   <!-- Generate Tab -->
   <div id="generate" class="tab-content active">
     <div id="selection-info">
-      <div class="no-selection">Select a text layer to get started</div>
+      <div class="no-selection">
+        <div class="no-selection-icon">📝</div>
+        <div class="no-selection-title">Select a Text Layer</div>
+        <div class="no-selection-hint">
+          Click on a text element in your design<br>
+          to start generating or improving copy
+        </div>
+      </div>
     </div>
     
     <div id="generate-form" style="display: none;">
